@@ -292,47 +292,30 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  cursor: default;
-}
-.tool-logo-frame {
-  width: 64px;
-  height: 64px;
+  padding: 14px 18px;
   background: rgba(201,168,76,0.07);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  border-radius: 10px;
   transition: border-color 0.2s, background 0.2s;
+  cursor: default;
+  min-width: 80px;
 }
-.tool-chip:hover .tool-logo-frame {
+.tool-chip:hover {
   border-color: var(--gold);
   background: var(--gold-dim);
 }
 .tool-icon {
-  width: 36px;
-  height: 36px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
   border-radius: 6px;
 }
-.tool-name-frame {
-  width: 64px;
-  padding: 5px 8px;
-  background: rgba(201,168,76,0.07);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  text-align: center;
-  transition: border-color 0.2s, background 0.2s;
-}
-.tool-chip:hover .tool-name-frame {
-  border-color: var(--gold);
-  background: var(--gold-dim);
-}
-.tool-name-frame span {
-  font-size: 10px;
+.tool-chip span {
+  font-size: 11px;
   font-weight: 500;
   color: var(--muted);
   letter-spacing: 0.06em;
+  text-align: center;
 }
   </style>
 </head>
@@ -423,23 +406,17 @@
 <!-- Canva -->
 <div class="tool-chip">
   <img src="am.png" alt="Alight Motion" class="tool-icon" />
-  <div class="tool-name-frame">
   <span>Alight Motion</span>
-  </div>
 </div>
 
 <!-- Alight Motion -->
 <div class="tool-chip">
   <img src="capcut.png" alt="Capcut" class="tool-icon" />
-  <div class="tool-name-frame">
   <span>Capcut</span>
-  </div>
 </div>
       <div class="tool-chip">
   <img src="canva.png" alt="Canva" class="tool-icon" />
-        <div class="tool-name-frame">
   <span>Canva</span>
-        </div>
 </div>
 
     </div>
